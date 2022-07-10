@@ -1,0 +1,17 @@
+.card__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--btn-bg);
+    margin-bottom: 30px;
+
+&:hover .card__list-icon,
+&:focus .card__list-icon {
+        fill: var(--accent-color);
+    }
+}
+
+
+

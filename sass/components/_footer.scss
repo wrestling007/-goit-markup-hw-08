@@ -1,0 +1,22 @@
+.footer {
+  background-color: var(--dark-bg);
+  padding: 60px 0px;
+}
+
+
+
+.footer__container{
+  display: flex;
+  align-items: baseline;
+}
+.footer__item:not(:last-child){
+  margin-right: 70px;
+ }
+.footer__title {
+    color: var(--white-color);
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 700;
+    display: block;
+}
