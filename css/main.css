@@ -102,11 +102,25 @@ body {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .button {
@@ -518,20 +532,34 @@ body {
 }
 
 .card__set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+}
+@media screen and (min-width: 768px) {
+  .card__set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .card__set-item {
   margin-left: 30px;
   margin-top: 30px;
-  -ms-flex-preferred-size: calc(100% / var(--card-item) - 30px);
-      flex-basis: calc(100% / var(--card-item) - 30px);
+}
+@media screen and (min-width: 768px) {
+  .card__set-item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__set-item {
+    -ms-flex-preferred-size: calc(25% - 30px);
+        flex-basis: calc(25% - 30px);
+  }
 }
 
 .card__item {
@@ -580,6 +608,11 @@ body {
 .work {
   padding-top: 0px;
   --card-item: 3;
+}
+@media screen and (max-width: 1200px) {
+  .work {
+    display: none;
+  }
 }
 
 .section-hero {
