@@ -63,6 +63,13 @@ ol {
         outline: 2px solid tomato;
     }   
     .section {
-        padding-top: 94px;
-        padding-bottom: 94px;
+        padding: 60px 0;
+        width: 100%;
+        @include desktop {
+            padding: 94px 0;
+        }
+        
     }
+    .no-scroll {
+            overflow: hidden;}
+            

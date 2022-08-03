@@ -18,8 +18,15 @@
   <body>
     <header class="header">
       <div class="container header-flex">
-        <nav class="nav-flex ">
           <a href="./index.html" class="link logo"> Web<span class="logo__header">Studio</span></a>
+          <button type="button" class="header__button" aria-expanded="false" aria-label="Переключатель мобильного меню"
+            data-menu-button>
+            <svg width="40" height="40">
+              <use class="header__icon--close" href="./images/sprite.svg#icon-close_40px"></use>
+              <use class="header__icon--menu" href="./images/sprite.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
+          <nav class="nav-flex ">
           <ul class="site-nav list ">
             <li class="list-nav"><a href="./index.html" class="link header-link current">Студия</a></li>
             <li class="list-nav"><a href="./portfolio.html" class="link header-link">Портфолио</a></li>
@@ -49,7 +56,7 @@
           Эффективные решения 
           для вашего бизнеса
         </h1>
-        <button class="button hero-btn" type="button" data-modal-open >Заказать услугу</button>
+        <button class="button hero-btn" type="button" data-modal-open aria-label="Кнопка открытия модального окна" >Заказать услугу</button>
       </div>
       </section>
       <section class="section feature">
@@ -57,8 +64,9 @@
         <h2 class="visually-hidden">Особености секции</h2>
         <ul class="card__set feature-list list">
              <li class="card__set-item">
-            <div class="list card__item"> <svg class="card__list-icon" width="66px" height="70">
-                <use href="./images/icons.svg#antenna"></use>
+            <div class="list card__item"> 
+              <svg class="card__list-icon" width="66px" height="70">
+              <use href="./images/icons.svg#antenna"></use>
               </svg> 
               </div>
               <h3 class="title feature-title">Внимание к деталям</h3>
@@ -108,28 +116,28 @@
         <div class="container">
         <h2 class="title section-title">Чем мы занимаемся</h2>
         <ul class="card__set work-list list">
-          <li class="work-item card__set-item">
+          <li class="work-item ">
             <img class="work-image" 
-              src="./images/pc.jpg"
+              srcset="images/desktop/box1.webp 1x, images/desktop/box1@2x.webp 2x"
+								src="images/desktop/box1.jpg"
               width="370"
-              height="294"
               alt="Программирование"
             />
             <p class="work-item-overley">Десктопные приложения</p>
             </li>
-          <li class="work-item card__set-item">
+          <li class="work-item ">
           <img class="work-image"
-              src="./images/phone.jpg"
+              srcset="images/desktop/box2.webp 1x, images/desktop/box2@2x.webp 2x"
+								src="images/desktop/box2.jpg"
               width="370"
-              height="294"
               alt="Анализ"
             /> <p class="work-item-overley">Мобильные приложения</p>
            </li>
-          <li class="work-item card__set-item">
+          <li class="work-item ">
           <img class="work-image"
-              src="./images/tablet.jpg"
+              srcset="images/desktop/box3.webp 1x, images/desktop/box3@2x.webp 2x"
+							src="images/desktop/box3.jpg"
               width="370"
-              height="294"
               alt="Дизайн"
             /> <p class="work-item-overley">Дизайнерские решения</p>
            </li>
@@ -141,12 +149,20 @@
         <h2 class="title section-title">Наша команда</h2>
         <ul class="card__set person-list list">
           <li class="person__item card__set-item">
+            <picture>
+              <source srcset="./images/desktop/team1.webp 1x, ./images/desktop/team1@2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp" />
+              <source srcset="./images/tablet/team1.webp 1x, ./images/tablet/team1@2x.webp 2x" media="(min-width: 768px)"
+                type="image/webp" />
+              <source srcset="./images/mobile/team1.webp 1x, ./images/mobile/team1@2x.webp 2x" media="(min-width: 450px)"
+                type="image/webp" />
             <img class="person-image"
               src="./images/img-3.jpg"
               width="270"
               height="260"
               alt="Демьянко"
             />
+            </picture>
             <div class="person__wraper">
             <h3 class="title person__title">Игорь Демьяненко</h3>
             <p class="person__text" lang="en">Product Designer</p>
@@ -171,12 +187,20 @@
           </div>
           </li>
           <li class="person__item card__set-item">
+            <picture>
+              <source srcset="./images/desktop/team2.webp 1x, ./images/desktop/team2@2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp" />
+              <source srcset="./images/tablet/team2.webp 1x, ./images/tablet/team2@2x.webp 2x" media="(min-width: 768px)"
+                type="image/webp" />
+              <source srcset="./images/mobile/team2.webp 1x, ./images/mobile/team2@2x.webp 2x" media="(min-width: 450px)"
+                type="image/webp" />
             <img class="person-image"
               src="./images/img-2.jpg"
               width="270"
               height="260"
               alt="Репина"
             />
+            </picture>
             <div class="person__wraper">
             <h3 class="title person__title">Ольга Репина</h3>
             <p class="person__text" lang="en">Frontend Developer</p>
@@ -205,12 +229,20 @@
             </div>
           </li>
           <li class="person__item card__set-item">
+            <picture>
+              <source srcset="./images/desktop/team3.webp 1x, ./images/desktop/team3@2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp" />
+              <source srcset="./images/tablet/team3.webp 1x, ./images/tablet/team3@2x.webp 2x" media="(min-width: 768px)"
+                type="image/webp" />
+              <source srcset="./images/mobile/team3.webp 1x, ./images/mobile/team3@2x.webp 2x" media="(min-width: 450px)"
+                type="image/webp" />
             <img class="person-image"
               src="./images/img-1.jpg"
               width="270"
               height="260"
               alt="Тарасов"
             />
+            </picture>
             <div class="person__wraper">
             <h3 class="title person__title">Николай Тарасов</h3>
             <p class="person__text" lang="en">Marketing</p>
@@ -239,12 +271,20 @@
           </div>
           </li>
           <li class="person__item card__set-item">
+            <picture>
+              <source srcset="./images/desktop/team4.webp 1x, ./images/desktop/team4@2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp" />
+              <source srcset="./images/tablet/team4.webp 1x, ./images/tablet/team4@2x.webp 2x" media="(min-width: 768px)"
+                type="image/webp" />
+              <source srcset="./images/mobile/team4.webp 1x, ./images/mobile/team4@2x.webp 2x" media="(min-width: 450px)"
+                type="image/webp" />
             <img class="person-image"
               src="./images/img.jpg"
               width="270"
               height="260"
               alt="Ермаков"
             />
+            </picture>
             <div class="person__wraper">
             <h3 class="title person__title">Михаил Ермаков</h3>
             <p class="person__text" lang="en">UI Designer</p>
@@ -279,37 +319,37 @@
         <div class="container">
           <h2 class="title section-title">Постоянные клиенты</h2>
           <ul class="card__set clients-list list">
-            <li class="card__set-item">
+            <li class="card__set-item-client">
               <a class="card__link link" href="" target="_blank" rel="noreferrer noopener"><svg class="card__client-icon" width="106px"
                     height="60">
                     <use href="./images/icons.svg#logo"></use>
                   </svg> </a>              
                   </li>
-            <li class="card__set-item">
+            <li class="card__set-item-client">
                <a class="card__link link" href="" target="_blank" rel="noreferrer noopener"><svg class="card__client-icon" width="106px"
                     height="60">
                     <use href="./images/icons.svg#logo-1" ></use>
                   </svg> </a>                      
             </li>
-            <li class="card__set-item">
+            <li class="card__set-item-client">
              <a class="card__link link" href="" target="_blank" rel="noreferrer noopener"><svg class="card__client-icon" width="106px"
                     height="60">
                     <use href="./images/icons.svg#object" ></use>
                   </svg> </a>
                           </li>
-            <li class="card__set-item">
+            <li class="card__set-item-client">
                <a class="card__link link" href="" target="_blank" rel="noreferrer noopener"><svg class="card__client-icon" width="106px"
                     height="60">
                     <use href="./images/icons.svg#logo-3" ></use>
                   </svg> </a>
                           </li>
-            <li class="card__set-item">
+            <li class="card__set-item-client">
                <a class="card__link link" href="" target="_blank" rel="noreferrer noopener"><svg class="card__client-icon" width="106px"
                     height="60">
                     <use href="./images/icons.svg#logo-2" ></use>
                   </svg> </a>
                           </li>
-            <li class="card__set-item">
+            <li class="card__set-item-client">
               <a class="card__link link" href="" target="_blank" rel="noreferrer noopener"><svg class="card__client-icon" width="106px"
                     height="60">
                     <use href="./images/icons.svg#logo-4" ></use>
@@ -322,6 +362,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__item">
+          <div class="footer__address">
         <a href="./index.html" class="logo link footer-logo"> Web<span class="logo__footer">Studio</span></a>
         <address>
           <ul class="address-list list">
@@ -336,10 +377,11 @@
             <li class="address-marg"><a href="tel:+380961111111" class="link address-link">+38 096 111 11 11</a></li>
           </ul>
         </address>
-      </div>
-        <div class="footer__item">
+        </div>
+      
+        <div class="footer__network">
           <p class="footer__title">присоединяйтесь</p>
-        <ul class="social-list">
+        <ul class="footer_social-list">
           <li class="social-item list"> <a class="social-link link" href="https://www.instagram.com/" target="_blank"
               rel="noreferrer noopener"><svg class="social-list-icon" width="20" height="20">
                 <use href="./images/icons.svg#instagram"></use>
@@ -363,7 +405,8 @@
         </ul>
         
         </div>
-        <div class="footer__item">
+        </div>
+        <div class="footer__form">
           <b class="footer__title">Подпишитесь на рассылку</b>
         <form class="footer-subscription__item">
                                <input name="user_email" class="footer-subscription__input" type="email" placeholder="E-mail" >
