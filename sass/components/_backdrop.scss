@@ -15,15 +15,30 @@
 }
 
 .backdrop.is-hidden .modal {
+    @media (max-width: 1200px) {
+            transform: translate(0, 0) scale(0, 0);
+        }
     transform: translate(-50%, -50%) scale(2);
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 528px;
+        @media (max-width: 1200px) {
+                position: relative;
+        
+                margin: 50px auto 0;
+                overflow: auto;
+        
+                max-width: 450px;
+                width: 100%;
+            }
+        
+            @include desktop {
+                max-width: 528px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
     width: 100%;
     min-height: 580px;
     background-color: var(--white-color);

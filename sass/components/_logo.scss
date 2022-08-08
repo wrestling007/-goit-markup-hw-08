@@ -1,12 +1,12 @@
 .header .logo {
-    margin-right: 94px;
+    // margin-right: 94px;
 }
 
 .logo {
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 24px;
     line-height: calc(31 / 26);
 
 
@@ -15,11 +15,16 @@
     letter-spacing: 0.03em;
 
     color: var(--accent-color);
+  
+	@include desktop {
+		font-size: 26px;
+		text-align: left;
+	}
 }
 
 .logo__header {
     color: var(--title-text-color);
-}
+   }
 
 .logo-marg {
     margin-bottom: 20px;
