@@ -17,15 +17,20 @@
 .portfolio__section {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
-    margin-top: -30px;
-    margin-left: -30px;
+    gap: 30px;
 }
 
 .portfolio__card {
-    flex-basis: calc((100% - 3 * 30px) / 3);
-    margin-top: 30px;
-    margin-left: 30px;
+    width: 100%;
+
+@include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 60px) / 3);
+   
+    
 }
 
 .portfolio__card-wraper {
@@ -35,13 +40,46 @@
     background: #ffffff;
 }
 
-.filter-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 56px;
+.portfolio__list{
+    margin-top: 15px;
+        margin-right: 8px;
+    
+        &:last-child {
+            margin-right: 0;
+        }
 }
 
-.portfolio__list:not(:last-child) {
-    margin-right: 8px;
+.portfolio__overlay{
+    position: absolute;
+        left: 0;
+        top: 0;
+    
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 24px;
+    
+        overflow: auto;
+    
+        @media screen and (min-width: 379px) {
+            padding: 77px 24px;
+            align-items: center;
+        }
+    
+        @include tablet {
+            padding: 49px 24px 77px;
+        }
+    
+        @include desktop {
+            padding: 63px 24px;
+        }
+    
+        width: 100%;
+        height: 100%;
+    
+        background-color: rgba(33, 150, 243, 0.9);
+    
+        transform: translateY(101%);
+        transition: transform 250ms --transition;
+}
 }

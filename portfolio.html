@@ -29,8 +29,8 @@
             <div class="header__menu" data-menu>
               <nav>
                 <ul class="site-nav list ">
-                  <li class="list-nav"><a href="./index.html" class="link header-link--current header-link ">Студия</a></li>
-                  <li class="list-nav"><a href="./portfolio.html" class="link header-link">Портфолио</a></li>
+                  <li class="list-nav"><a href="./index.html" class="link header-link ">Студия</a></li>
+                  <li class="list-nav"><a href="./portfolio.html" class="link header-link header-link--current">Портфолио</a></li>
                   <li class="list-nav"><a href="" class="link header-link">Контакты</a></li>
                 </ul>
               </nav>
@@ -74,24 +74,39 @@
       <div class="container">
         <h1 class="visually-hidden">Портфолио</h1>
         <ul class="filter-list list  portfolio__btm">
-          <li class="portfolio__list"><button class="filter-btn filter-current" type="button">Все</button></li>
-          <li class="portfolio__list"><button class="filter-btn" type="button">Веб-сайты</button></li>
-          <li class="portfolio__list"><button class="filter-btn" type="button">Приложения</button></li>
-          <li class="portfolio__list"><button class="filter-btn" type="button">Дизайн</button></li>
-          <li class="portfolio__list"><button class="filter-btn" type="button">Маркетинг</button></li>
+          <li class="portfolio__list">
+            <button class="filter-btn filter-current" type="button">Все</button></li>
+          <li class="portfolio__list">
+            <button class="filter-btn" type="button">Веб-сайты</button></li>
+          <li class="portfolio__list">
+            <button class="filter-btn" type="button">Приложения</button></li>
+          <li class="portfolio__list">
+            <button class="filter-btn" type="button">Дизайн</button></li>
+          <li class="portfolio__list">
+            <button class="filter-btn" type="button">Маркетинг</button></li>
         </ul>
              <ul class="list portfolio__section">
              <li class="portfolio__card">
             <a class="link portfolio__link" href="" target="_blank" rel="noopener noreferrer nofollow">
-              <div class="portfolio__item-img-wraper"><img src="./images/web.jpg"
-            width="370"
-            height="294"
-            alt="Технокряк"/>
-            <p class="overlay">
-              Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-              получить
-              исчерпывающие сведения о компании или частном лице.
-            </p>
+              <div class="portfolio__item-img-wraper">
+                <picture>
+                  <source srcset="./images/desktop/portfolio1.webp 1x, ./images/desktop/portfolio1@2x.webp 2x" media="(min-width: 1200px)"
+                    type="image/webp" />
+                  <source srcset="./images/tablet/portfolio1.webp 1x, ./images/tablet/portfolio1@2x.webp 2x" media="(min-width: 768px)"
+                    type="image/webp" />
+                  <source srcset="./images/mobile/portfolio1.webp 1x, ./images/mobile/portfolio1@2x.webp 2x" media="(max-width: 767px)"
+                    type="image/webp" />
+                  <img src="./images/web.jpg" alt="Технокряк"/>
+                </picture>            
+               <div class="portfolio__overlay">
+              <p class="overlay">
+                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                получить
+                исчерпывающие сведения о компании или частном лице.
+              </p>
+
+            </div>
+            
           </div>
             <div class="portfolio__card-wraper">
             <h2 class="title portfolio__title">Технокряк</h2>
@@ -102,14 +117,24 @@
         </li>
         <li class="portfolio__card">
           <a class="link portfolio__link" href="" target="_blank" rel="noopener noreferrer nofollow">
-           <div class="portfolio__item-img-wraper"> <img src="./images/design.jpg"
-            width="370"
-            height="294"
-            alt="Постер"/> <p class="overlay">
+           <div class="portfolio__item-img-wraper"> 
+            <picture>
+            <source srcset="./images/desktop/portfolio2.webp 1x, ./images/desktop/portfolio2@2x.webp 2x" media="(min-width: 1200px)"
+              type="image/webp" />
+            <source srcset="./images/tablet/portfolio2.webp 1x, ./images/tablet/portfolio2@2x.webp 2x" media="(min-width: 768px)"
+              type="image/webp" />
+            <source srcset="./images/mobile/portfolio2.webp 1x, ./images/mobile/portfolio2@2x.webp 2x" media="(max-width: 767px)"
+              type="image/webp" />
+              <img src="./images/design.jpg" alt="Постер" />
+            </picture>
+            
+            <div class="portfolio__overlay">
+            <p class="overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
               получить
               исчерпывающие сведения о компании или частном лице.
             </p>
+            </div>
            </div>
             <div class="portfolio__card-wraper">
             <h2 class="title portfolio__title">Постер New Orlean vs Golden Star</h2>
@@ -119,14 +144,23 @@
             </li>
                 <li class="portfolio__card"> 
                   <a class="link portfolio__link" href="" target="_blank" rel="noopener noreferrer nofollow">
-               <div class="portfolio__item-img-wraper"> <img src="./images/app.jpg"
-            width="370"
-            height="294"
-            alt="Ресторан Seafood"/> <p class="overlay">
+               <div class="portfolio__item-img-wraper"> 
+                <picture>
+                  <source srcset="./images/desktop/portfolio3.webp 1x, ./images/desktop/portfolio3@2x.webp 2x" media="(min-width: 1200px)"
+                    type="image/webp" />
+                  <source srcset="./images/tablet/portfolio3.webp 1x, ./images/tablet/portfolio3@2x.webp 2x" media="(min-width: 768px)"
+                    type="image/webp" />
+                  <source srcset="./images/mobile/portfolio3.webp 1x, ./images/mobile/portfolio3@2x.webp 2x" media="(max-width: 767px)"
+                    type="image/webp" />                
+                <img src="./images/app.jpg" alt="Ресторан Seafood"/> 
+                </picture>
+            <div class="portfolio__overlay">
+             <p class="overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
               получить
               исчерпывающие сведения о компании или частном лице.
             </p>
+            </div>
                </div>
             <div class="portfolio__card-wraper">
             <h2 class="title portfolio__title">Ресторан Seafood</h2>
@@ -136,32 +170,49 @@
         </li>
         <li class="portfolio__card">
               <a class="link portfolio__link" href="" target="_blank" rel="noopener noreferrer nofollow">
-             <div class="portfolio__item-img-wraper"> <img src="./images/marketing.jpg"
-            width="370"
-            height="294"
-            alt="Проект Prime"/> <p class="overlay">
+             <div class="portfolio__item-img-wraper"> 
+              <picture>
+                  <source srcset="./images/desktop/portfolio4.webp 1x, ./images/desktop/portfolio4@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                  <source srcset="./images/tablet/portfolio4.webp 1x, ./images/tablet/portfolio4@2x.webp 2x" media="(min-width: 768px)"
+                    type="image/webp" />
+                  <source srcset="./images/mobile/portfolio4.webp 1x, ./images/mobile/portfolio4@2x.webp 2x" media="(max-width: 767px)"
+                    type="image/webp" />
+              <img src="./images/marketing.jpg" alt="Проект Prime"/>
+              </picture>
+            <div class="portfolio__overlay">      
+             <p class="overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
               получить
               исчерпывающие сведения о компании или частном лице.
             </p>
-             </div>
-            <div class="portfolio__card-wraper">
+            </div>
+             <div class="portfolio__card-wraper">
             <h2 class="title portfolio__title">Проект Prime</h2>
             <p class="portfolio__item">Маркетинг</p>
-             
-            </div>
+             </div>
+             </div>
             </a>
         </li>
             <li class="portfolio__card">
               <a class="link portfolio__link" href="" target="_blank" rel="noopener noreferrer nofollow">
-             <div class="portfolio__item-img-wraper"> <img src="./images/app2.jpg"
-            width="370"
-            height="294"
-            alt="Проект Boxes"/> <p class="overlay">
+             <div class="portfolio__item-img-wraper"> 
+              <picture>
+                <source srcset="./images/desktop/portfolio5.webp 1x, ./images/desktop/portfolio5@2x.webp 2x" media="(min-width: 1200px)"
+                  type="image/webp" />
+                <source srcset="./images/tablet/portfolio5.webp 1x, ./images/tablet/portfolio5@2x.webp 2x" media="(min-width: 768px)"
+                  type="image/webp" />
+                <source srcset="./images/mobile/portfolio5.webp 1x, ./images/mobile/portfolio5@2x.webp 2x" media="(max-width: 767px)"
+                  type="image/webp" />
+              <img src="./images/app2.jpg" alt="Проект Boxes"/>
+              </picture>
+            <div class="portfolio__overlay">
+            <p class="overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
               получить
               исчерпывающие сведения о компании или частном лице.
             </p>
+            </div>
              </div>
             <div class="portfolio__card-wraper">
             <h2 class="title portfolio__title">Проект Boxes</h2>
@@ -171,14 +222,23 @@
         </li>
             <li class="portfolio__card">
               <a class="link portfolio__link" href="" target="_blank" rel="noopener noreferrer nofollow"> 
-             <div class="portfolio__item-img-wraper"> <img src="./images/web2.jpg"
-            width="370"
-            height="294"
-            alt="Inspiration has no Borders"/> <p class="overlay">
+             <div class="portfolio__item-img-wraper"> 
+              <picture>
+              <source srcset="./images/desktop/portfolio6.webp 1x, ./images/desktop/portfolio6@2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp" />
+              <source srcset="./images/tablet/portfolio6.webp 1x, ./images/tablet/portfolio6@2x.webp 2x" media="(min-width: 768px)"
+                type="image/webp" />
+              <source srcset="./images/mobile/portfolio6.webp 1x, ./images/mobile/portfolio6@2x.webp 2x" media="(max-width: 767px)"
+                type="image/webp" />
+             <img src="./images/web2.jpg" alt="Inspiration has no Borders"/> 
+            </picture>
+            <div class="portfolio__overlay">
+            <p class="overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
               получить
               исчерпывающие сведения о компании или частном лице.
             </p>
+            </div>
              </div>
             <div class="portfolio__card-wraper">
             <h2 class="title portfolio__title" lang="en">Inspiration has no Borders</h2>
@@ -188,15 +248,24 @@
         </li>
             <li class="portfolio__card">
               <a class="link portfolio__link" href="" target="_blank" rel="noopener noreferrer nofollow">
-            <div class="portfolio__item-img-wraper">  <img src="./images/design2.jpg"
-            width="370"
-            height="294"
-            alt="Издание Limited Edition"/> 
+            <div class="portfolio__item-img-wraper">  
+              <picture>
+                <source srcset="./images/desktop/portfolio7.webp 1x, ./images/desktop/portfolio7@2x.webp 2x" media="(min-width: 1200px)"
+                  type="image/webp" />
+                <source srcset="./images/tablet/portfolio7.webp 1x, ./images/tablet/portfolio7@2x.webp 2x" media="(min-width: 768px)"
+                  type="image/webp" />
+                <source srcset="./images/mobile/portfolio7.webp 1x, ./images/mobile/portfolio7@2x.webp 2x" media="(max-width: 767px)"
+                  type="image/webp" />
+                <img src="./images/design2.jpg" alt="Издание Limited Edition" />
+              </picture>
+            
+            <div class="portfolio__overlay">
             <p class="overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
               получить
               исчерпывающие сведения о компании или частном лице.
             </p>
+            </div>
             </div>
             <div class="portfolio__card-wraper">
             <h2 class="title portfolio__title">Издание Limited Edition</h2>
@@ -209,15 +278,23 @@
             <li class="portfolio__card">
               <a class="link portfolio__link" href="" target="_blank" rel="noopener noreferrer nofollow">
 
-            <div class="portfolio__item-img-wraper">  <img src="./images/marketing2.jpg"
-            width="370"
-            height="294"
-            alt="Проект LAB"/>
+            <div class="portfolio__item-img-wraper">
+              <picture>
+                <source srcset="./images/desktop/portfolio8.webp 1x, ./images/desktop/portfolio8@2x.webp 2x" media="(min-width: 1200px)"
+                  type="image/webp" />
+                <source srcset="./images/tablet/portfolio8.webp 1x, ./images/tablet/portfolio8@2x.webp 2x" media="(min-width: 768px)"
+                  type="image/webp" />
+                <source srcset="./images/mobile/portfolio8.webp 1x, ./images/mobile/portfolio8@2x.webp 2x" media="(max-width: 767px)"
+                  type="image/webp" />
+                <img src="./images/marketing2.jpg" alt="Проект LAB" />
+              </picture>                
+            <div class="portfolio__overlay">
             <p class="overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
               получить
               исчерпывающие сведения о компании или частном лице.
             </p>
+            </div>
             </div>
             <div class="portfolio__card-wraper">
             <h2 class="title portfolio__title">Проект LAB</h2>
@@ -227,15 +304,23 @@
         </li>
             <li class="portfolio__card">
               <a class="link portfolio__link" href="" target="_blank" rel="noopener noreferrer nofollow">
-             <div class="portfolio__item-img-wraper"> <img src="./images/app3.jpg"
-                width="370"
-                height="294"
-                alt="Growing Business"/> 
+             <div class="portfolio__item-img-wraper"> 
+              <picture>
+                <source srcset="./images/desktop/portfolio9.webp 1x, ./images/desktop/portfolio9@2x.webp 2x" media="(min-width: 1200px)"
+                  type="image/webp" />
+                <source srcset="./images/tablet/portfolio9.webp 1x, ./images/tablet/portfolio9@2x.webp 2x" media="(min-width: 768px)"
+                  type="image/webp" />
+                <source srcset="./images/mobile/portfolio9.webp 1x, ./images/mobile/portfolio9@2x.webp 2x" media="(max-width: 767px)"
+                  type="image/webp" />
+                <img src="./images/app3.jpg" alt="Growing Business" />
+              </picture>
+                <div class="portfolio__overlay">
                 <p class="overlay">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                   получить
                   исчерпывающие сведения о компании или частном лице.
                 </p>
+                </div>
              </div>
                 <div class="portfolio__card-wraper">
                 <h2 class="title portfolio__title" lang="en">Growing Business</h2>
