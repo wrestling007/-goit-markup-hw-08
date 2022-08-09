@@ -24,7 +24,7 @@
     width: 100%;
 
 @include tablet {
-        width: calc((100% - 30px) / 2);
+        width: calc((100% - 35px) / 2);
     }
 
     @include desktop {
@@ -32,7 +32,7 @@
    
     
 }
-
+}
 .portfolio__card-wraper {
     padding: 20px 24px;
     border: 1px solid #eeeeee;
@@ -43,9 +43,8 @@
 .portfolio__list{
     margin-top: 15px;
         margin-right: 8px;
-    
         &:last-child {
-            margin-right: 0;
+        margin-right: 0;
         }
 }
 
@@ -82,4 +81,4 @@
         transform: translateY(101%);
         transition: transform 250ms --transition;
 }
-}
+    
